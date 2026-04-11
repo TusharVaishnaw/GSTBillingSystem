@@ -1,0 +1,19 @@
+.badge {
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: white;
+}
+
+/* Status colors */
+.badge.paid {
+  background-color: #16a34a;
+}
+
+.badge.unpaid {
+  background-color: #dc2626;
+}
+
+.badge.partial {
+  background-color: #f59e0b;
+}

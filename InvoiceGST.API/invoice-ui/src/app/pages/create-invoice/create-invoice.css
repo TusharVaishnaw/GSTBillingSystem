@@ -1,0 +1,38 @@
+.invoice-container {
+  max-width: 800px;
+  margin: auto;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.full-width {
+  width: 100%;
+}
+
+.item-row {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.item-row mat-form-field {
+  flex: 1;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  margin-top: 15px;
+  color: #2563eb;
+}
