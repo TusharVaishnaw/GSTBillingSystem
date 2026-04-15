@@ -1,0 +1,113 @@
+GSTBillingSystem/
+└── InvoiceGST.API/
+    ├── invoice-ui/                 (Angular frontend)
+    │   ├── angular.json
+    │   ├── package.json
+    │   ├── tsconfig*.json
+    │   └── src/
+    │       ├── index.html
+    │       ├── main.ts
+    │       ├── styles.css
+    │       └── app/
+    │           ├── api.service.ts
+    │           ├── app.ts
+    │           ├── app.html
+    │           ├── app.css
+    │           ├── app.routes.ts
+    │           ├── app.config.ts
+    │           │
+    │           ├── layout/
+    │           │   ├── layout.ts
+    │           │   ├── layout.html
+    │           │   └── layout.css
+    │           │
+    │           └── pages/
+    │               ├── create-invoice/
+    │               │   ├── create-invoice.ts
+    │               │   ├── create-invoice.html
+    │               │   └── create-invoice.css
+    │               │
+    │               ├── customers/
+    │               │   ├── customers.ts
+    │               │   ├── customers.html
+    │               │   └── customers.css
+    │               │
+    │               ├── dashboard/
+    │               │   ├── dashboard.ts
+    │               │   ├── dashboard.html
+    │               │   └── dashboard.css
+    │               │
+    │               ├── invoices/
+    │               │   ├── invoices.ts
+    │               │   ├── invoices.html
+    │               │   └── invoices.css
+    │               │
+    │               └── payments/
+    │                   ├── payments.ts
+    │                   ├── payments.html
+    │                   └── payments.css
+    │
+    └── InvoiceGST.API/             (.NET backend)
+        ├── Program.cs
+        ├── appsettings.json
+        ├── appsettings.Development.json
+        │
+        ├── Controllers/
+        │   ├── AdminApiController.cs
+        │   ├── AuditApiController.cs
+        │   ├── AuthApiController.cs
+        │   ├── CustomersApiController.cs
+        │   ├── CustomersController.cs
+        │   ├── DashboardApiController.cs
+        │   ├── EmailApiController.cs
+        │   ├── InvoicesApiController.cs
+        │   ├── PaymentsApiController.cs
+        │   └── HomeController.cs
+        │
+        ├── Data/
+        │   └── ApplicationDbContext.cs
+        │
+        ├── Models/
+        │   ├── ApplicationUser.cs
+        │   ├── AuditLog.cs
+        │   ├── Customer.cs
+        │   ├── Invoice.cs
+        │   ├── InvoiceItem.cs
+        │   ├── Payment.cs
+        │   ├── RefreshToken.cs
+        │   ├── ErrorViewModel.cs
+        │   │
+        │   └── DTOs/
+        │       ├── CreateCustomerDto.cs
+        │       ├── CreateInvoiceDto.cs
+        │       ├── ForgotPasswordDto.cs
+        │       ├── InvoiceResponseDto.cs
+        │       ├── RegisterDto.cs
+        │       ├── ResetPasswordDto.cs
+        │       └── UpdateRoleDto.cs
+        │
+        ├── Services/
+        │   └── EmailService.cs
+        │
+        ├── Middleware/
+        │   └── ExceptionMiddleware.cs
+        │
+        ├── Helpers/
+        │   └── ApiResponse.cs
+        │
+        ├── Migrations/
+        │   ├── InitialCreate.cs
+        │   ├── UpdateInvoiceStructure.cs
+        │   ├── AddPaymentModule.cs
+        │   ├── AddIdentityTables.cs
+        │   ├── AddRefreshToken.cs
+        │   ├── AddAuditLogs.cs
+        │   ├── AddCustomerEmail.cs
+        │   └── ApplicationDbContextModelSnapshot.cs
+        │
+        ├── Properties/
+        │   └── launchSettings.json
+        │
+        └── Views/
+            └── Shared/
+                └── _Layout.cshtml.css
